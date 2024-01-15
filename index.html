@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee-House</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      href="./media-resourses/favicon_.ico"
+      type="image/x-icon"
+    />
+    <meta name="author" content="Kharin Aleksey" />
+  </head>
+
+  <body>
+    <div class="background-color">
+      <div class="flex-wrapper">
+        <header class="header">
+          <div class="header-menu">
+            <div class="header-items">
+              <a
+                class="logo-image-link"
+                href="index.html"
+                onclick="hideBurgerMenu()"
+              >
+                <div class="logo">
+                  <img
+                    class="logo-image"
+                    src="./media-resourses/header/logo.png"
+                    alt="coffee-house-logo"
+                  />
+                </div>
+              </a>
+
+              <nav class="menu">
+                <ul class="menu-list">
+                  <li>
+                    <a href="#favorite" onclick="hideBurgerMenu()"
+                      >Favorite coffee</a
+                    >
+                  </li>
+                  <li><a href="#about" onclick="hideBurgerMenu()">About</a></li>
+                  <li>
+                    <a href="#mobile-app" onclick="hideBurgerMenu()"
+                      >Mobile app</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact-us-main" onclick="hideBurgerMenu()"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <a class="menu-button-link" href="menu/menu.html">
+                <div class="menu-button">
+                  <span>Menu</span>
+                  <img
+                    class="burger-menu-cup"
+                    src="./media-resourses/header/coffee-cup.svg"
+                    alt="coffee-cup-img"
+                  />
+                </div>
+              </a>
+
+              <div class="burger-button" onclick="moveBurgerMenu()">
+                <div class="burger-button-border">
+                  <div class="burger-button-line1"></div>
+                  <div class="burger-button-line2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="enjoy">
+            <div class="video-wrapper">
+              <div class="video-bg">
+                <video
+                  src="./media-resourses/Enjoy/video-_2160p_.webm"
+                  type="video/webm"
+                  autoplay
+                  muted
+                  loop
+                ></video>
+              </div>
+            </div>
+
+            <div class="enjoy-main-block">
+              <div class="enjoy-content">
+                <div class="enjoy-title">
+                  <h1>
+                    <span>Enjoy</span> premium coffee at our charming cafe
+                  </h1>
+                </div>
+                <div class="enjoy-text">
+                  With its inviting atmosphere and delicious coffee options, the
+                  Coffee House Resource is a popular destination for coffee
+                  lovers and those seeking a warm and inviting space to enjoy
+                  their favorite beverage.
+                </div>
+
+                <a class="enjoy-button-menu-link" href="menu/menu.html">
+                  <div class="enjoy-button-menu">
+                    <div class="enjoy-button-text">Menu</div>
+                    <div class="enjoy-button-text-hover">Menu</div>
+                    <img
+                      src="./media-resourses/header/coffee-cup.png"
+                      alt="coffee-cup-image"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="favorite" id="favorite">
+          <div class="favorite-main-content">
+            <div class="favorite-title">
+              <h2>Choose your <span>favorite</span> coffee</h2>
+            </div>
+
+            <div class="favorite-slider">
+              <div class="slider">
+                <div class="button-left" onclick="buttonLeftf()">
+                  <img
+                    class="img-no-hover"
+                    src="./media-resourses/Enjoy/arrow-right.svg"
+                    alt="arrow-image"
+                  />
+                  <img
+                    class="img-hover"
+                    src="./media-resourses/Enjoy/arrow-right-hover.svg"
+                    alt="arrow-image-hover"
+                  />
+                </div>
+
+                <div class="favorite-middle-content">
+                  <div class="slider-1">
+                    <div class="slider-content">
+                      <img
+                        src="./media-resourses/Enjoy/coffee-slider-1.svg"
+                        alt="slider-foto-1"
+                      />
+
+                      <div class="slider-description">
+                        <div class="slider-text-heading">
+                          <h3>S’mores Frappuccino</h3>
+                        </div>
+                        <div class="slider-text-description">
+                          This new drink takes an espresso and mixes it with
+                          brown sugar and cinnamon before being topped with oat
+                          milk.
+                        </div>
+                        <div class="slider-text-price">
+                          <h3>$5.50</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slider-2">
+                    <div class="slider-content">
+                      <img
+                        src="./media-resourses/Enjoy/coffee-slider-2.svg"
+                        alt="slider-foto-2"
+                      />
+
+                      <div class="slider-description">
+                        <div class="slider-text-heading">
+                          <h3>Caramel Macchiato</h3>
+                        </div>
+                        <div class="slider-text-description">
+                          Fragrant and unique classic espresso with rich
+                          caramel-peanut syrup, with cream under whipped thick
+                          foam.
+                        </div>
+                        <div class="slider-text-price">
+                          <h3>$5.00</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slider-3">
+                    <div class="slider-content">
+                      <img
+                        src="./media-resourses/Enjoy/coffee-slider-3.svg"
+                        alt="slider-foto-3"
+                      />
+
+                      <div class="slider-description">
+                        <div class="slider-text-heading">
+                          <h3>Ice coffee</h3>
+                        </div>
+                        <div class="slider-text-description">
+                          A popular summer drink that tones and invigorates.
+                          Prepared from coffee, milk and ice.
+                        </div>
+                        <div class="slider-text-price">
+                          <h3>$4.50</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-right" onclick="buttonRightf()">
+                  <img
+                    class="img-no-hover"
+                    src="./media-resourses/Enjoy/arrow-right.svg"
+                    alt="arrow-image"
+                  />
+                  <img
+                    class="img-hover"
+                    src="./media-resourses/Enjoy/arrow-right-hover.svg"
+                    alt="arrow-image-hover"
+                  />
+                </div>
+              </div>
+
+              <div class="slider-control">
+                <div class="slider-control-1" onclick="chooseSLider1()">
+                  <div class="status-bar-1"></div>
+                </div>
+                <div class="slider-control-2" onclick="chooseSLider2()">
+                  <div class="status-bar-2"></div>
+                </div>
+                <div class="slider-control-3" onclick="chooseSLider3()">
+                  <div class="status-bar-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about" id="about">
+          <div class="about-main-content">
+            <div class="about-title">
+              <h2>
+                Resource is <span>the perfect and cozy place</span> where you
+                can enjoy a variety of hot beverages, relax, catch up with
+                friends, or get some work done.
+              </h2>
+            </div>
+
+            <div class="images">
+              <div class="column-left">
+                <div class="column-item-big">
+                  <img
+                    class="about-image-item"
+                    src="./media-resourses/About/about-left-top.svg"
+                    alt="about-section-foto"
+                  />
+                </div>
+
+                <div class="column-item-small">
+                  <img
+                    class="about-image-item"
+                    src="./media-resourses/About/about-left-bottom.svg"
+                    alt="about-section-foto"
+                  />
+                </div>
+              </div>
+
+              <div class="column-right">
+                <div class="column-item-small">
+                  <img
+                    class="about-image-item"
+                    src="./media-resourses/About/about-right-top.svg"
+                    alt="about-section-foto"
+                  />
+                </div>
+
+                <div class="column-item-big">
+                  <img
+                    class="about-image-item"
+                    src="./media-resourses/About/about-right-bottom.svg"
+                    alt="about-section-foto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-app" id="mobile-app">
+          <div class="mobile-app-main-content">
+            <div class="mobile-app-left">
+              <h2><span>Download</span> our apps to start ordering</h2>
+              <span
+                >Download the Resource app today and experience the comfort of
+                ordering your favorite coffee from wherever you are</span
+              >
+
+              <div class="mobile-app-buttons">
+                <div class="apple-store-button">
+                  <div class="button-logo">
+                    <img
+                      class="img-no-hover"
+                      src="./media-resourses/Mobile-app/apple-icon.svg"
+                      alt="apple-store-icon"
+                    />
+                    <img
+                      class="img-hover"
+                      src="./media-resourses/Mobile-app/apple-icon-hover.svg"
+                      alt="apple-store-icon-hover"
+                    />
+                  </div>
+                  <div class="button-text-top">Available on the</div>
+                  <div class="button-text-bottom">App Store</div>
+                </div>
+
+                <div class="google-play-button">
+                  <img
+                    class="img-no-hover"
+                    src="./media-resourses/Mobile-app/googleplay-icon.svg"
+                    alt="google-play-icon"
+                  />
+                  <img
+                    class="img-hover"
+                    src="./media-resourses/Mobile-app/googleplay-icon-hover.svg"
+                    alt="google-play-icon-hover"
+                  />
+
+                  <div class="button-text-top">Available on</div>
+                  <div class="button-text-bottom">Google Play</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mobile-app-foto">
+              <img
+                src="./media-resourses/Mobile-app/mobile-screens.svg"
+                alt="mobile-screens-foto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer" id="contact-us-main">
+          <div class="footer-main-content">
+            <div class="social">
+              <h2>Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
+
+              <div class="socials-buttons">
+                <div class="tweeter-button">
+                  <img
+                    class="img-no-hover"
+                    src="./media-resourses/Footer/twitter.svg"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    class="img-hover"
+                    src="./media-resourses/Footer/twitter-hover.svg"
+                    alt="twitter-logo-hover"
+                  />
+                </div>
+
+                <div class="instagram-button">
+                  <img
+                    class="img-no-hover"
+                    src="./media-resourses/Footer/instagram.svg"
+                    alt="instagram-logo"
+                  />
+                  <img
+                    class="img-hover"
+                    src="./media-resourses/Footer/instagram-hover.svg"
+                    alt="instagram-logo-hover"
+                  />
+                </div>
+
+                <div class="facebook-button">
+                  <img
+                    class="img-no-hover"
+                    src="./media-resourses/Footer/facebook.svg"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    class="img-hover"
+                    src="./media-resourses/Footer/facebook-hover.svg"
+                    alt="facebook-logo-hover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="contacts">
+              <span>Contact us</span>
+
+              <div class="contacts-block">
+                <div class="address">
+                  <a
+                    class="address-link"
+                    href="https://goo.su/0Ct4QSv"
+                    target="_blank"
+                  >
+                    <img
+                      src="./media-resourses/Footer/pin-alt.svg"
+                      alt="pin-logo"
+                    />
+                  </a>
+
+                  <a
+                    class="address-link"
+                    href="https://goo.su/0Ct4QSv"
+                    target="_blank"
+                  >
+                    <span>8558 Green Rd., &nbsp; LA</span>
+                  </a>
+                </div>
+
+                <div class="telephone">
+                  <a class="telephone-link" href="tel:+1(603)555-0123">
+                    <img
+                      src="./media-resourses/Footer/phone.svg"
+                      alt="phone-logo"
+                    />
+                  </a>
+                  <a class="telephone-link" href="tel:+1(603)555-0123">
+                    <span>+1 (603) 555-0123</span>
+                  </a>
+                </div>
+
+                <div class="time">
+                  <img
+                    src="./media-resourses/Footer/clock.svg"
+                    alt="clock logo"
+                  />
+                  <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
